@@ -49,6 +49,11 @@ class _SignUpFormState extends State<SignUpForm> {
 
   final double _formProgress = 0;
 
+//4 Step
+  void _showWelcomeScreen() {
+    Navigator.of(context).pushNamed('/welcome');
+  }
+
   @override
   //3 Step buid() method for the _SignUpFormState class
   Widget build(BuildContext context) {
@@ -94,7 +99,8 @@ class _SignUpFormState extends State<SignUpForm> {
                     : Colors.blue;
               }),
             ),
-            onPressed: null,
+            //4 Step: implement _showWelcomeScreen to onPressed
+            onPressed: _showWelcomeScreen,
             child: const Text('Sign up'),
           ),
         ],
