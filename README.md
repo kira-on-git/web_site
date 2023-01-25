@@ -29,5 +29,10 @@ Step 3: Add animation for sign in progress
 3. Locate the build() method for the _SignUpFormState class. This is the part of the code that builds the SignUp button. Notice how the button is defined: It’s a TextButton with a blue background, white text that says Sign up and, when pressed, does nothing.enable the button to display the screen and create a method to display it.
 
 4. Update the onPressed property to call the (non-existent) method that will display the welcome screen.
-And add the _showWelcomeScreen method 
-Fix the error reported by the analyzer that _showWelcomeScreen is not defined. Directly above the build() method, add the following function:
+And add the _showWelcomeScreen function inside the State before @override
+void _showWelcomeScreen() {
+  Navigator.of(context).pushNamed('/welcome');
+}
+5. Add the /welcome route.
+Create the connection to show the new screen. Inside the MaterialApp({routes: }), add the route below '/' (параметр):
+'/welcome': (context) => const WelcomeScreen(),
