@@ -50,6 +50,7 @@ class _SignUpFormState extends State<SignUpForm> {
   final double _formProgress = 0;
 
   @override
+  //3 Step buid() method for the _SignUpFormState class
   Widget build(BuildContext context) {
     return Form(
       child: Column(
@@ -102,7 +103,7 @@ class _SignUpFormState extends State<SignUpForm> {
   }
 }
 
-// Wellcome
+// 2 Step
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen();
 

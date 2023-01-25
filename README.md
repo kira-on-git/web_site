@@ -24,6 +24,7 @@ Step 3: Add animation for sign in progress
 
 Поскольку сами виджеты являются immutable (не могут быть изменены после создания), Flutter хранит информацию о состоянии в сопутствующем классе, называемом Stateclass. В этой лабораторной работе все ваши изменения будут внесены в закрытый [_SignUpFormState] класс.
 
-1. in lib/main.dart file: add the class definition for the WelcomeScreen widget after the SignUpScreen class:
+2. in lib/main.dart file: add the class definition for the WelcomeScreen widget after the SignUpScreen class:
 
-2. enable the button to display the screen and create a method to display it.
+3. Locate the build() method for the _SignUpFormState class. This is the part of the code that builds the SignUp button. Notice how the button is defined: It’s a TextButton with a blue background, white text that says Sign up and, when pressed, does nothing.enable the button to display the screen and create a method to display it.
+
